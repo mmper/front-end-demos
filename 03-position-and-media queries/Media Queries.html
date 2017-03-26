@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Media Queries写法</title>
+		<style>
+		
+			@media screen{
+				div{width:800px;}
+			}
+			@media only screen and (max-width: 768px) {
+				div{width:400px;}
+			}
+			@media only screen and (max-width: 400px) {
+				div{width:100px;}
+			}
+			div{
+				border:1px solid #ddd;
+				margin:0 auto;
+			}
+		</style>
+	</head>
+	<body>
+		<!--实现1个div，宽度是 800px，当窗口宽度小于768px，div的宽度是400px，当窗口宽度小于400px，div的宽度是100px。-->
+		<div>我是风</div>
+	</body>
+</html>
