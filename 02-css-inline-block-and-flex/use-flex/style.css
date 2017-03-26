@@ -1,0 +1,45 @@
+@charset "utf-8";
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	padding:20px 0;
+	width:800px;
+	border-left:1px solid #0f0;
+	border-right:1px solid #0f0;
+	margin:auto;
+}
+h2{
+	font-size:14px;
+}
+.ly{
+	margin-bottom:20px;
+}
+.ly_item{
+	margin-right:10px;
+	width:50px;
+	height:50px;
+	border:1px solid #f00;
+	background-color:#ff0;
+}
+.ly_item:last-child{
+	margin-right:0;
+}
+/***作业flex***/
+.ly{
+	display:flex;
+	display:-webkit-flex;
+}
+.ly--center{
+	justify-content:center;
+}
+.ly--justify{
+	justify-content:space-between;
+}
+.ly_item--fill{
+	flex-grow:1;
+}
+.ly--middle{
+	align-items:center;
+}

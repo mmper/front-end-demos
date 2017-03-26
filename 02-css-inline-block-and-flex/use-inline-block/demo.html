@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>use-inline-block(mmper)</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<h2>多个元素在一行</h2>
+		<div class="ly">
+			<div class="ly_item"></div>
+			<div class="ly_item"></div>
+			<div class="ly_item"></div>
+		</div>
+		<h2>多个元素水平居中</h2>
+		<div class="ly ly--center">
+			<div class="ly_item"></div>
+			<div class="ly_item"></div>
+			<div class="ly_item"></div>
+		</div>
+		<h2>多个元素两端对齐</h2>
+		<div class="ly ly--justify">
+			<div class="ly_item"></div> 
+			<div class="ly_item"></div> 
+			<div class="ly_item"></div>
+		</div>
+		<h2>多个元素在某一行，某个元素占据剩余部分</h2>
+		<div class="ly ly--fill">
+			<div class="ly_item"></div>
+			<div class="ly_item"></div>
+			<div class="ly_item ly_item--fill"></div>
+		</div>
+		<h2>多个元素垂直居中</h2>
+		<div class="ly ly--middle" style="height:300px">
+			<div class="ly_item"></div>
+			<div class="ly_item" style="height:200px"></div>
+			<div class="ly_item" style="height:150px"></div>
+		</div>
+	</body>
+</html>

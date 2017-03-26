@@ -1,0 +1,63 @@
+@charset "utf-8";
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	padding:20px 0;
+	width:800px;
+	border-left:1px solid #0f0;
+	border-right:1px solid #0f0;
+	margin:auto;
+}
+h2{
+	font-size:14px;
+}
+.ly{
+	margin-bottom:20px;
+}
+.ly_item{
+	margin-right:10px;
+	width:50px;
+	height:50px;
+	border:1px solid #f00;
+	background-color:#ff0;
+}
+.ly_item:last-child{
+	margin-right:0;
+}
+/*******作业-inline-block*******/
+.ly{
+	font-size:0; /*模使用[换行符]或[空格符]后，webkit浏览器中会引起最后一个模块有多余空白，使用font-size:0可清除该空格*/
+}
+.ly_item{
+	display:inline-block;
+	vertical-align:top;/*opera浏览器需要添加*/
+}
+/*水平居中*/
+.ly--center{
+	text-align:center;
+}
+/*两端对齐*/
+.ly--justify{
+	text-align:justify;
+}
+.ly--justify:after{
+	content:'';
+	width:100%;
+	display:inline-block;
+}
+/*多个元素在某一行，某个元素占据剩余部分*/
+.ly_item--fill{
+	width:674px;/*不会实现*/
+}
+/*多个元素垂直居中*/
+.ly--middle:after {
+	content: "";
+	display:inline-block;
+	height:100%;
+	vertical-align:middle;
+}
+.ly--middle .ly_item {
+	vertical-align: middle;
+}
