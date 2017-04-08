@@ -4,37 +4,39 @@
     <meta charset="UTF-8">
     <title>实现psd设计稿</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../common-css/float-layout.css">
+    <link rel="stylesheet" href="../common-css/font.css">
 </head>
 <body>
-<div class="container clearfix">
-    <!--1、页眉-->
-    <header id="top" class="clearfix">
-        <p>ife.baidu.com</p>
-        <span>2016.3</span>
+<div class="container">
+    <!--1、头部-->
+    <header class="top ly ly--justify ff-hei">
+        <h3 class="top_title ly_item">ife.baidu.com</h3>
+        <span class="top_date ly_item">2016.3</span>
     </header>
     <!--2、主体-->
-    <section id="main" class="clearfix">
+    <section class="main ly">
         <!--1、上-->
-        <div class="main-top clearfix">
-            <div class="top-lf">
+        <div class="banner ly ly--justify">
+            <div class="banner-img ly_item">
                 <p>
                     <img src="img/1.jpg.jpg">
                 </p>
                 <div class="lf-mask"></div>
                 <div class="rt-mask"></div>
             </div>
-            <div class="top-rt">
-                <h1>
+            <div class="banner-content ly_item">
+                <p class="banner-content-title">
                     ABOUT
-                </h1>
-                <h1>
+                </p>
+                <p class ="banner-content-title">
                     TECHNOLOGE
-                </h1>
+                </p>
                 <i>About technologe about technologe<br> about technologe</i>
-                <p>700</p>
-                <div class="rt-bottom">
-                    <p>3.2</p>
-                    <div>
+                <p class="banner-content-body">700</p>
+                <div class="banner-content-foot ly">
+                    <span class="ly_item">3.2</span>
+                    <div class="ly_item">
                         <p>CSS</p>
                         <p>csscscscscscsc</p>
                     </div>
@@ -42,24 +44,24 @@
             </div>
         </div>
         <!--2、中-->
-        <div class="main-mid clearfix">
-            <div class="mid-lf">
-                <h4>What</h4>
-                <p>
+        <div class="panel ly">
+            <div class="panel--what ly_item">
+                <h3>What</h3>
+                <article>
                     端前端前端端前端端前端前端端前端前端端前端端前端前端端前端前端端前端端前端前端端前端前端端前端端前端前端前端端前端端前端前端前端端前端前端前端前端前端前端前端前端前端前端前端前端前端前端端前端前端端前端前端前端前端前端前端前端前端前端前端前端前端前端前端端端前端端前端前端前端前端前端前端前端前端前端前端前
-                </p>
+                </article>
             </div>
-            <div class="mid-mid">
-                <h4>When</h4>
-                <p>
+            <div class="panel--when ly_item">
+                <h3>When</h3>
+                <article>
                     端前端前端端前端端前端前端端前端端前端前端端前端前端前端前端前端前端前端前端前端前端前端前端前端前端端前端前端端前端前端前端前端前端前端前端前端前端前端前端前端前端前端端前端前端端前端前端前端前端前端前端前端前端前端前端前
-                </p>
+                </article>
             </div>
-            <div class="mid-rt">
-                <h4>How</h4>
-                <p>前端前端前端前端</p>
-                <p>前端前端前端前端前端</p>
-                <p>前端前端前端前端</p>
+            <div class="panel--how ly_item">
+                <h3>How</h3>
+                <article>
+                    前端前端前端前端前端前端前端前端前端前端前端前端前端
+                </article>
                 <ul>
                     <li>What------<i>40%</i></li>
                     <li>What------<i>30%</i></li>
@@ -68,50 +70,49 @@
             </div>
         </div>
         <!--3、下-->
-        <div class="mian-bottom clearfix">
+        <div class="main-bottom ly ly--justify">
             <!--1、左-->
-            <div class="bottom-lf">
-                <p class="title">
-                    <span>THE</span>TECHNOLOGE<br> OF FRONT<br>
-                    <a>前端技术领域</a>
-                </p>
-                <div class="content">
-                    <p class="first">
-                        <a>前</a>
-                        端前端前端前端前端前端前端前端前端前端前端前端前端前端前前端前端前端前端前端前端前端前端前端前端前端前端前端前端端前前端前端前端前端前端前端前端端前端前端前端前端前端前端前端前端端前端前端前端前端前端前端前端前端前端前端端前端前端前端前端前端前端前端前端前端前端前端前端前端端前端前端前端前端前端前端前端前端前端前端前端前端前端端前端前端
-                    </p>
+            <div class="article ly_item">
+                <h3 class="article_title">
+                    <strong>THE</strong>TECHNOLOGE<br> OF FRONT<br>
+                </h3>
+                <h4 class="article_sub-title">前端技术领域</h4>
+                <div class="article_content">
                     <p>
-                        <img src="img/2.jpg">
+                        前端前端前端前端前端前端前端前端前端前端前端前端前端前端前前端前端前端前端前端前端前端前端前端前端前端前端前端前端端前前端前端前端前端前端前端前端端前端前端前端前端前端前端前端前端端前端前端前端前端前端前端前端前端前端前端端前端前端前端前端前端前端前端前端前端前端前端前端前端端前端前端前端前端前端前端前端前端前端前端前端前端前端端前端前端
                     </p>
-                    <p class="second">
+                    <div class="article_dec-pic">
+                        <img src="img/2.jpg">
+                    </div>
+                    <p>
                        前端前端前端前端前端前端前端前前端前端前端前端前端前端前端前端前端前端前端前端前端前端端前端前端前端前端前端前端前端前端端前端前端前端前端前端前端前端前端前端前端前端前端前端前前端前端前端前端前端前端前端前端前端前端前端前端前端前端端前端前端前端前端前端前前端前端前端前端前端前端前端前端前端端前端前端前端前端前端前端前端前端前端前端前端前端前端端前端前端前端前端前端前端前端前端前端前端前端前端前端端前端前端前端前端前端前端前端前端前端前端前端前端前端端前端前端前端前端前端前端前端前端前端前端前端前端前端端前端前端前端前端前端前端前端前端前端前端前端前端前端端前端前端前端前端前端前端前端前端前端前端前端前端前端端前端前端前端前端前端前端前端前端
                     </p>
                 </div>
             </div>
             <!--2、右-->
-            <div class="bottom-rt">
-                <div>
-                    <img src="img/3.jpg.jpg" alt="">
-                    <p>
-                        <span>前端技术</span>
-                        <i>前端技术前端技术</i>
+            <div class="aside ly_item">
+                <div class="aside_img">
+                    <img src="img/3.jpg.jpg">
+                    <p class="aside_img-title">
+                        <span class="aside_img-name">前端技术</span>
+                        <i class="aside_img-describe">前端技术前端技术</i>
                     </p>
                 </div>
-                <div class="div-bottom">
+                <div class="aside_nav">
                     <ul>
-                        <li><b></b>前端前端前端前端前端...................................<i>前端</i></li>
-                        <li><b></b>前端前端前端前端前端..................................<i>前端</i></li>
-                        <li><b></b>前端前端前端前端前端..................................<i>前端</i></li>
+                        <li class="aside_nav-item"><b></b>前端前端......(用一个点做背景repeat-x做).......<i>前端</i></li>
+                        <li class="aside_nav-item"><b></b>前端前端前端前端前端..................................<i>前端</i></li>
+                        <li class="aside_nav-item"><b></b>前端前端前端前端前端..................................<i>前端</i></li>
                     </ul>
-                    <div class="last">
-                        <div>
-                            <h1>0</h1>
-                            <h4>
-                                <p>ONE TWO<br>THERE FORE FIVE</p>
+                    <div class="ly">
+                        <div class="label">
+                            <h1 class="label_title">0</h1>
+                            <h4 class="label_detail">
+                                ONE TWO<br>THERE FORE FIVE
                                 <span>hello world hello world hello world</span>
                             </h4>
                         </div>
-                        <div>
+                        <div class="aside-detail">
                             <b></b>
                             <i>world hello world hello world hello world hello world hello world hello world hello world hello world hello world hello world hello world hello world </i>
                             <b></b>
@@ -122,7 +123,7 @@
         </div>
     </section>
     <!--3、页脚-->
-    <footer id="footer">
+    <footer class="footer">
         <p>ife.baidu.com</p>
     </footer>
 </div>

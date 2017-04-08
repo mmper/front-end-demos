@@ -1,0 +1,15 @@
+.ly:before{
+    content:"";
+    display: table;
+}
+.ly:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+.ly_item{
+    float:left;
+}
+.ly--justify .ly_item:last-child{
+    float:right;
+}

@@ -14,50 +14,38 @@ body{
     width: 980px;
     height: 1386px;
     font:14px "mircosoft yahei";
+    margin:0 auto;
 }
 /*公共样式*/
 .container{
     width:95%;
     margin:0 auto;
 }
-.clearfix:before{
-    content:"";
-    display: table;
-}
-.clearfix:after{
-    content:"";
-    display:block;
-    clear: both;
-}
 img{
     vertical-align: bottom;
 }
 /*模块样式*/
 /**1、header**/
-#top{
+.top{
     border-bottom: 1px solid #938e8c;
 }
-#top p{
-    float: left;
+.top_title{
     padding: 30px 20px 5px 10px;
     color: #fff;
     background: #d45d5c;
 }
-#top span{
-    float:right;
+.top_date{
     color:#d45d5c;
     padding-top: 30px;
 }
 /**2、mian**/
-#main{
+.main{
     margin:20px 0;
 }
-/*main-top*/
-/*top-rt*/
-.top-lf{
-    float:left;
+/*banner*/
+/*banner-img*/
+.banner-img{
     position: relative;
-
 }
 .lf-mask,.rt-mask{
     width:30%;
@@ -77,162 +65,156 @@ img{
     background: #CC7681;
     opacity: .5;
 }
-/*top-rt*/
-.top-rt{
-    float:right;
+/*banner-content*/
+.banner-content{
     max-height: 301px;
     padding-top: 5px;
     border-top: 2px solid #cc8091;
 }
-.top-rt h1{
+.banner-content-title{
     font-weight: normal;
     font-size: 1.2rem;
     border-bottom: 1px solid #000;
 
 }
-.top-rt h1:first-letter{
+.banner-content-title:first-letter{
     font-size:1.5em;
     font-weight: 700;
 }
-.top-rt i{
+.banner-content i{
     word-spacing: 5px;
 }
-.top-rt>p{
+.banner-content-body{
     font-size: 7em;
     letter-spacing: 5px;
     color:#75b86b;
     transform: skew(-10deg);
 }
-.rt-bottom>p{
-    float: left;
+.banner-content-foot span{
     font-size: 2.7rem;
     color: #cc8091;
     padding-right: 5px;
 }
-.rt-bottom>div{
+.banner-content-bottom div{
     padding-top: 15px;
-    float: left;
     font-size: 0.6rem;
 }
-.rt-bottom>div p:first-child{
+.banner-content-bottom p:first-child{
     color: #cc8091;
 }
 /*main-mid*/
-.main-mid{
+.panel{
     padding: 20px 0 30px;
+    width: 640px;
 }
-.mid-lf,.mid-mid{
-    float: left;
-    width:250px;
+.panel--what,.panel--when{
     text-align: justify;
-    margin-right: 25px;
+    margin-right: 5%;
 }
-.mid-lf h4{
+.panel--what{
+    width: 35%;
+}
+.panel--when{
+    width: 30%;
+}
+.panel--how{
+    width: 25%;
+}
+.panel--what h3{
     color:#418c59;
     border-bottom: 1px solid #418c59;
 }
-.mid-mid{
-    width:200px;
-}
-.mid-mid h4{
+.panel--when h3{
     color:#d2994f;
     border-bottom: 1px solid #d2994f;
 }
-.mid-rt{
-    float: left;
-}
-.mid-rt h4{
+.panel--how h3{
     color:#cc7680;
     border-bottom: 1px solid #cc7680;
 }
-.mid-rt ul{
-    margin-top: 20px;
+.panel--how ul{
+    margin-top: 3em;
 }
-.mid-rt li i{
+.panel--how i{
     color:#cc7680;
 }
 /**main-bottom**/
 /*左*/
-.bottom-lf{
-    float: left;
+.article{
     width: 45%;
 }
-.title{
-    padding-bottom: 5px;
-    margin-bottom: 10px ;
-    border-bottom: 2px solid #11456b;
+.article_title{
     font-size: 2em;
     word-spacing:10px;
     color:#11456b;
 }
-.title>span{
+.article_title strong{
     display: inline-block;
     font-size: 1.5em;
     color: #f5e327;
     transform: skew(-10deg);
     padding-right: 10px;
 }
-.title>a{
+.article_sub-title{
+    margin-bottom: 10px ;
     font-size: 1.4rem;
+    border-bottom: 2px solid #11456b;
 }
-.content{
+.article_content{
     text-align: justify;
     position: relative;
 }
-.content p.first a{
-    float: left;
+.article_content p:first-of-type:first-letter {
+    margin-right: 5px;
     font-size: 3em;
     color: #f5e327;
-    padding-right: 5px;
+    float: left;
 }
-.content p.second{
+.article_content p:last-child{
     text-indent: 2em;
 }
-.content img {
+.article_dec-pic{
     float: right;
     margin: 10px 0 5px 10px;
 }
 /*右*/
-.bottom-rt{
-    float: right;
+.aside_img{
+    position:relative;
 }
-.bottom-rt div {
-    position: relative;
-}
-.bottom-rt div>p{
+.aside_img-title{
     position: absolute;
     bottom:0;
     left:0;
     width: 458px;
     height:50px;
-    padding-left: 30px;
-    background-color: rgba(0,0,0,0.5);
+    padding-left: 2em;
+    background-color: rgba(0,0,0,0.6);
     line-height: 50px;
 }
-.bottom-rt div>p span{
+.aside_img-name{
     border-left: 2px solid #72b16a;
     padding-left: 10px;
     padding-right: 10px;
     color:#fff;
     font-size: 1.8em;
 }
-.bottom-rt div>p i{
+.aside_img-describe{
     color:#72b16a;
 }
-.div-bottom{
+.aside_nav{
     width: 458px;
     height: 334px;
     background: #eeedd6;
-    margin-top: 30px;
+    margin-top: 20px;
 }
-.div-bottom ul{
+.aside_nav ul{
     padding: 20px;
 }
-.div-bottom li{
+.aside_nav-item{
     line-height:40px;
     letter-spacing: 2px;
 }
-.div-bottom li b{
+.aside_nav-item b{
     display: inline-block;
     width: 10px;
     height: 7px;
@@ -240,7 +222,7 @@ img{
     padding-right: 20px;
     /*459*/
 }
-.last div:first-child{
+.label{
     float: left;
     width: 250px;
     height:184px;
@@ -248,14 +230,14 @@ img{
     background: #d45d5c;
     color: #fff;
 }
-.last div:first-child h1{
+.label_title{
     float: left;
     font-size: 9em;
     padding-left: 10px;
     font-weight: normal;
     margin-right: 5px;
 }
-.last div:first-child h4{
+.label_detail{
     float: left;
     width: 160px;
     height: 120px;
@@ -266,22 +248,19 @@ img{
     font-style: italic;
     word-spacing: 4px;
 }
-.last div:first-child h4 span{
+.label_detail span{
     font-size: .6rem;
     font-style: normal;
     word-spacing: 2px;
 }
-
-
-
-.last div:last-child{
+.aside-detail{
     float: right;
     width:170px;
     margin-right: 20px;
     text-align: justify;
 
 }
-.last div b{
+.aside-detail b{
     float: left;
     width: 26px;
     height:22px;
@@ -289,21 +268,18 @@ img{
     margin-top: -10px;
     background: url(img/01.png) no-repeat 0 0;
 }
-.last div b:last-child{
+.aside-detail b:last-child{
     float: right;
     margin-top: 0;
     margin-right:0;
     background-position: -35px 0;
 }
-
-
-
 /*3、footer*/
-#footer{
+.footer{
     margin-top: 30px;
     border-top: 1px solid #000;
 }
-#footer p{
+.footer p{
     float: right;
     color: #d45d5c;
 }
